@@ -140,10 +140,13 @@ Description:
 Search endpoint for searching for Vulnerabilites, the amount of result
 limit is set to 20
 
+Curl:
+curl --header "Content-Type: application/json" -XPOST --data '{"find":"rouncube","apikey":"myapikey"}'  https://api.firosolutions.com/luckysearch/
+
+
 Sample:
 >>> print json.loads(requests.post("https://api.firosolutions.com/watchers/mywatchers", json={"apikey:"mykey", "find":"roundcube"}).text).keys()
 ['found', 'total']
-
 
 >>> print json.loads(requests.post("https://api.firosolutions.com/watchers/mywatchers", json={"apikey:"mykey", "find":"roundcube"}).text)['total']
 6
