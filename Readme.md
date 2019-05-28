@@ -39,8 +39,7 @@ Sample:
 
 *  /latest
 
-```
-
+```python
 Method: POST
 Keys: apikey
 
