@@ -37,6 +37,41 @@ Sample:
 
 ```
 
+*  /latest
+
+```
+
+Method: POST
+Keys: apikey
+
+
+Description:
+Get the latest Vulnerability 
+
+Sample code:
+$ python3.6
+Python 3.6.8 (default, Apr 13 2019, 18:58:09) 
+[GCC 4.2.1 Compatible OpenBSD Clang 7.0.1 (tags/RELEASE_701/final)] on openbsd6
+Type "help", "copyright", "credits" or "license" for more information.
+
+
+
+
+import requests, json
+zxc = requests.post("https://api.firosolutions.com/latest", json={"apikey": 'mykey'}).text
+print(json.dumps(json.loads(zxc), indent=4))
+{
+    "latest": {
+        "category": "XSS",
+        "date": "2018-09-05 18:22:50",
+        "info": "for more info use the dedicated search function",
+        "title": "Fraction - Less critical - XSS vulnerability - SA-CONTRIB-2018-059"
+    }
+}
+```
+
+
+
 *  /watchers/watcher
 
 
