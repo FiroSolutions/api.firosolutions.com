@@ -1,3 +1,7 @@
+Read the up to date information at: https://watchers.firosolutions.com/apidoc
+
+
+
 ## Description:
 ```
 Json Rest API for viewing watcher and Vulnerability data
@@ -7,6 +11,46 @@ Url: https://api.firosolutions.com
 ```
 
 ## EndPoints
+
+*  /rustlibs
+```
+Method: POST
+keys: apikey libraries
+
+code example:
+
+```
+```python
+import requests
+requests.post('https://api.firosolutions.com/rustlibs', 
+json={"apikey": "value", 
+"libraries":{"name":"version", "asd":"0"}}).text
+
+
+
+```
+
+*  /nodejslibs
+```
+Method: POST
+keys: apikey libraries
+
+
+Description:
+Queries our api for vulnerabilities in NodeJS libraries
+
+```
+```python
+import requests
+requests.post('https://api.firosolutions.com/nodejslibs', 
+json={"apikey": "value", 
+"libraries":
+	{"ids-enterprise":"4.18.1", "ammonia":"0", "tay":"man"}
+     }).text
+
+```
+
+
 *  /watchers/mywatchers
 
 
