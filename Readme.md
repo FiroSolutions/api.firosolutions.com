@@ -12,6 +12,28 @@ Url: https://api.firosolutions.com
 
 ## EndPoints
 
+*  /timesearch
+
+Description:
+search within a time frame
+
+Sample code:
+```python
+>>> import json, requests
+>>> asd = requests.post("https://api.firosolutions.com/timesearch", json={'find':'wordpress', 'from':'2017-01-02 00:00:00', 'to':'2019-01-02 00:00:00','apikey':'myapikeygoeshere'})
+```
+
+Curl: 
+```
+curl https://api.firosolutions.com/timesearch -XPOST -H "Content-Type: application/json" -d '{"find":"wordpress", "from":"2016-01-02 00:00:00", "to":"2019-01-02 00:00:00", "apikey":"myapikeygoeshere"}
+```
+
+Extra:
+This function is rate limited, it can only return a maxium value of 30 results and it's limited to returning only 1000
+entries from the database, if it says it returns 1000 as total the value is in 99.99% more then that
+
+
+
 *  /rustlibs
 ```
 Method: POST
