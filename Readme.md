@@ -103,6 +103,18 @@ Sample:
 
 ```
 
+*  /latesttwenty     
+
+### Description:   
+get the 20 latest vulns   
+
+```python
+import requests, json
+zxc = requests.post("https://api.firosolutions.com/latesttwenty", json={"apikey": 'mykey'}).text
+```
+
+
+
 *  /latest
 
 ```python
