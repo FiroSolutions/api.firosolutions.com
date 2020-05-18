@@ -37,6 +37,14 @@ Extra:
 This function is rate limited, it can only return a maxium value of 30 results and it's limited to returning only 1000
 entries from the database, if it says it returns 1000 as total the value is in 99.99% more then that
 
+*  /random   
+```
+Method: POST
+keys: apikey
+
+Description:
+returns a random vulnerability
+```
 
 
 *  /cvesearch   
