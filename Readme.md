@@ -39,8 +39,48 @@ entries from the database, if it says it returns 1000 as total the value is in 9
 
 
 
-*  /cve
+*  /cvesearch   
 
+```
+Method: POST
+keys: apikey cve
+
+Description:
+find a CVE
+```
+
+```python
+
+def cvesearch(cve):
+	url = "https://api.firosolutions.com/cvesearch"
+	aa = requests.post(url, json={"apikey":"mykeyhere", "cve":cve}).text
+	return json.loads(aa)
+
+
+
+```
+
+
+
+*  /cveloosesearch    
+```
+Method: POST
+keys: apikey search
+
+Description:
+Search for CVE
+
+```
+
+
+```python
+
+def cveloosesearch(cve):
+	url = "https://api.firosolutions.com/cveloosesearch"
+	aa = requests.post(url, json={"apikey":"mykeyhere", "search":cve}).text
+	return json.loads(aa)
+
+```
 
 *  /rustlibs
 ```
