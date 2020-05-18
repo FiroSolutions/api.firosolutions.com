@@ -10,6 +10,11 @@ Url: https://api.firosolutions.com
 
 ```
 
+## Vulns.firosolutions.com  
+Is a webui using this api
+
+
+
 ## EndPoints
 
 *  /timesearch
@@ -32,6 +37,9 @@ Extra:
 This function is rate limited, it can only return a maxium value of 30 results and it's limited to returning only 1000
 entries from the database, if it says it returns 1000 as total the value is in 99.99% more then that
 
+
+
+*  /cve
 
 
 *  /rustlibs
